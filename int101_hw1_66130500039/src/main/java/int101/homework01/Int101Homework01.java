@@ -102,10 +102,11 @@ public class Int101Homework01 {
        BankAccount account1 = new BankAccount(1,person1);
        BankAccount account2 = new BankAccount(2,person1);
        account1.deposit(5000);
+       account2.deposit(3000);
        account1.withdarw(2000);
-       account2.transfer(1000,account1);
-       System.out.println(account2.toString());
+       account1.transfer(1000,account2);
        System.out.println(account1.toString());
+       System.out.println(account2.toString());
    }
 }
 
